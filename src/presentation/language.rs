@@ -19,6 +19,6 @@ pub struct LanguageIdentifier {
 }
 
 #[get("/language/{programming_language_identifier}")]
-pub async fn language(language_identifier: Path<LanguageIdentifier>) -> Json<String> {
+pub async fn get_language(language_identifier: Path<LanguageIdentifier>) -> Json<String> {
     return Json(language_identifier.into_inner().programming_language_identifier);
 }
