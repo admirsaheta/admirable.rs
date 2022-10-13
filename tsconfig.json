@@ -1,0 +1,78 @@
+{
+    "ts-node": {
+      "require": ["tsconfig-paths/register"],
+      // these options are overrides used only by ts-node
+      // same as the --compilerOptions flag and the TS_NODE_COMPILER_OPTIONS environment variable
+      "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        //      "esModuleInterop": true,
+        "baseUrl": ".",
+        "paths": {
+          "types/*": [
+            "./@types/*"
+          ],
+          "utils/*": [
+            "./utils/*"
+          ],
+          "*": [
+            "*"
+          ]
+        },
+        "rootDirs": [
+          "."
+        ],
+        "esModuleInterop": true,
+        //      "module": "esnext",
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "isolatedModules": true
+      },
+      "swc": true
+    },
+    "compilerOptions": {
+      "baseUrl": ".",
+      "allowSyntheticDefaultImports": true,
+      "paths": {
+        "types/*": [
+          "./@types/*"
+        ],
+        "utils/*": [
+          "./utils/*"
+        ],
+        "*": [
+          "*"
+        ]
+      },
+      "downlevelIteration": true,
+      "target": "ES2020",
+      "lib": [
+        "dom",
+        "dom.iterable",
+        "esnext"
+      ],
+      "allowJs": true,
+      "skipLibCheck": true,
+      "strict": false,
+      "strictNullChecks": false,
+      "forceConsistentCasingInFileNames": true,
+      "noEmit": true,
+      "incremental": true,
+      "esModuleInterop": true,
+      "module": "esnext",
+      "moduleResolution": "node",
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "jsx": "preserve",
+      "rootDirs": [
+        "."
+      ]
+    },
+    "include": [
+      "**/*.ts",
+      "**/*.tsx"
+    ],
+    "exclude": [
+      "node_modules"
+    ]
+  }
