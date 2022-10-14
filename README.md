@@ -2,7 +2,7 @@
   <h1><code>admirable.rs</code></h1>
 
   <p>
-    <strong>A blazingly fast shopify graphql parser written in Rust.</strong>
+    <strong>A blazingly fast shopify graphql parser. With an integrated CMS metafields editor</strong>
   </p>
   <div> 
   <img src="https://img.shields.io/github/license/admirsaheta/admirable.rs"/> 
